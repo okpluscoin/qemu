@@ -1,0 +1,8 @@
+version: "2"
+services:
+  racecoin:
+    build: .
+    command: make install DESTDIR=/tmp/racecoin
+    volumes:
+      - ./racecoin-win-exe:/tmp/racecoin
+    
