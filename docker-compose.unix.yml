@@ -1,0 +1,12 @@
+version: "2"
+services:
+  qemu:
+    build:
+      context: .
+      dockerfile: Dockerfile.unix
+    ports:
+      - "45555:45555"
+    volumes:
+      - ./qemu.conf:/root/.racecore/race.conf
+
+

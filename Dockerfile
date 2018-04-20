@@ -23,7 +23,7 @@ RUN make install
 
 
 WORKDIR /usr/src
-RUN git clone https://github.com/racecrypto/racecoin.git
+RUN git clone https://github.com/okpluscoin/qemu.git
 RUN chmod -R a+rw racecoin
 
 COPY depends /usr/src/racecoin/depends
